@@ -32,7 +32,7 @@
             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i5J-iy-Ilz">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i5J-iy-Ilz">
                     <rect key="frame" x="20" y="0.0" width="90" height="90"/>
                     <animations/>
                     <constraints>
@@ -40,7 +40,7 @@
                         <constraint firstAttribute="width" constant="90" id="5qj-JB-X01"/>
                     </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rsS-42-Nc3">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rsS-42-Nc3">
                     <rect key="frame" x="90" y="0.0" width="90" height="90"/>
                     <animations/>
                     <constraints>
@@ -48,7 +48,7 @@
                         <constraint firstAttribute="height" constant="90" id="ysB-PM-H7w"/>
                     </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="myi-8P-f5C">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="myi-8P-f5C">
                     <rect key="frame" x="110" y="60" width="90" height="90"/>
                     <animations/>
                     <constraints>
@@ -56,7 +56,7 @@
                         <constraint firstAttribute="width" constant="90" id="DJq-eu-TgT"/>
                     </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1WZ-cY-3Qp">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1WZ-cY-3Qp">
                     <rect key="frame" x="55" y="110" width="90" height="90"/>
                     <animations/>
                     <constraints>
@@ -64,7 +64,7 @@
                         <constraint firstAttribute="width" constant="90" id="anW-7C-z0B"/>
                     </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U1z-2D-kmJ">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U1z-2D-kmJ">
                     <rect key="frame" x="0.0" y="60" width="90" height="90"/>
                     <animations/>
                     <constraints>
