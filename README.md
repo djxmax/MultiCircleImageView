@@ -9,7 +9,7 @@
 
 MultiCicrlceImageView allow you to put until 5 images in a small area. It principally made for messaging list with one or more users.
 
-![](MultiCircleImageViewScreen?raw=true "MultiCircleImageView screenshot")
+![](MultiCircleImageViewScreen.gif?raw=true "MultiCircleImageView screenshot")
 
 
 ## Usage
