@@ -5,11 +5,20 @@
 [![License](https://img.shields.io/cocoapods/l/MultiCircleImageView.svg?style=flat)](http://cocoapods.org/pods/MultiCircleImageView)
 [![Platform](https://img.shields.io/cocoapods/p/MultiCircleImageView.svg?style=flat)](http://cocoapods.org/pods/MultiCircleImageView)
 
+## Overview
+
+MultiCicrlceImageView allow you to put until 5 images in a small area. It principally made for messaging list with one or more users.
+
+![](MultiCircleImageViewScreen?raw=true "MultiCircleImageView screenshot")
+
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+* iOS9
 
 ## Installation
 
@@ -20,9 +29,23 @@ it, simply add the following line to your Podfile:
 pod "MultiCircleImageView"
 ```
 
+## Usage
+
+```Swift
+import MultiCircleImageView
+
+@IBOutlet weak var testView: UIView!
+
+let imageList = [UIImage(named: "your_image")!]
+
+let test = MultiCircleImageView(frame: testView.frame)
+test.addView(testView, imageList: imageList)
+
+```
+
 ## Author
 
-Maxime Lucquin, mlucquin@agendize.com
+Maxime Lucquin, maxime.lucquin@gmail.com
 
 ## License
 
