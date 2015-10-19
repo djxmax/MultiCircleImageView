@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "MultiCircleImageView"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A view to put your messaging avatar in a list"
 
 # This description is used to generate tags and improve search results.
