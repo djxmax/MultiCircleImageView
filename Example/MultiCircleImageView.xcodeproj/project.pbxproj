@@ -14,7 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		7A3C22941BD4EEFB00718DEA /* MultiCircleImageViewScreen.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7A3C22931BD4EEFB00718DEA /* MultiCircleImageViewScreen.gif */; settings = {ASSET_TAGS = (); }; };
+		7A3C22961BD4F14500718DEA /* MultiCircleImageViewScreen.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7A3C22951BD4F14500718DEA /* MultiCircleImageViewScreen.gif */; settings = {ASSET_TAGS = (); }; };
 		907092CC9D637B41B22C76BA /* Pods_MultiCircleImageView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04101CD0A3B0943C97CB31CA /* Pods_MultiCircleImageView_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,7 @@
 		607FACE51AFB9204008FA782 /* MultiCircleImageView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiCircleImageView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7A3C22931BD4EEFB00718DEA /* MultiCircleImageViewScreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MultiCircleImageViewScreen.gif; sourceTree = "<group>"; };
+		7A3C22951BD4F14500718DEA /* MultiCircleImageViewScreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = MultiCircleImageViewScreen.gif; path = ../MultiCircleImageViewScreen.gif; sourceTree = "<group>"; };
 		C527BBA2034D33557F373435 /* MultiCircleImageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MultiCircleImageView.podspec; path = ../MultiCircleImageView.podspec; sourceTree = "<group>"; };
 		CABF3058D7A442492576B286 /* Pods-MultiCircleImageView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiCircleImageView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MultiCircleImageView_Tests/Pods-MultiCircleImageView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E842C494D6FBD6BE84884C49 /* Pods_MultiCircleImageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiCircleImageView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,7 +146,7 @@
 				C527BBA2034D33557F373435 /* MultiCircleImageView.podspec */,
 				0E25745051AA6237C49FFE51 /* README.md */,
 				3BFB12AC1D5C1FC1338BE679 /* LICENSE */,
-				7A3C22931BD4EEFB00718DEA /* MultiCircleImageViewScreen.gif */,
+				7A3C22951BD4F14500718DEA /* MultiCircleImageViewScreen.gif */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -250,7 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				7A3C22941BD4EEFB00718DEA /* MultiCircleImageViewScreen.gif in Resources */,
+				7A3C22961BD4F14500718DEA /* MultiCircleImageViewScreen.gif in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
