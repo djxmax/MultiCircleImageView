@@ -1,24 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MultiCircleImageView_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NmV-YZ-Lbh">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Eyp-rn-3E0"/>
+                                    <constraint firstAttribute="height" constant="300" id="kWe-tJ-sYa"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9ff-bL-JYO">
+                                <rect key="frame" x="28" y="93" width="544" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="1 image"/>
+                                    <segment title="2 images"/>
+                                    <segment title="3 images"/>
+                                    <segment title="4 images"/>
+                                    <segment title="5 images"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedTap:" destination="BYZ-38-t0r" eventType="valueChanged" id="2qd-BQ-zJI"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MultiCircleImageView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgy-qg-yWE">
+                                <rect key="frame" x="171" y="40" width="258" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="300" minValue="50" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="jgF-VH-dAb">
+                                <rect key="frame" x="148" y="550" width="304" height="31"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="uVl-U7-KhU"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hIb-AM-cQ3"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="9ff-bL-JYO" firstAttribute="top" secondItem="Xgy-qg-yWE" secondAttribute="bottom" constant="20" id="2rm-RA-lfv"/>
+                            <constraint firstItem="Xgy-qg-yWE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F17-r2-BiJ"/>
+                            <constraint firstItem="NmV-YZ-Lbh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NNf-ol-Wka"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9ff-bL-JYO" secondAttribute="trailing" constant="8" id="fOg-0C-2fL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jgF-VH-dAb" secondAttribute="bottom" constant="20" id="kIX-cc-VPG"/>
+                            <constraint firstItem="Xgy-qg-yWE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="nbK-lk-ezd"/>
+                            <constraint firstItem="9ff-bL-JYO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="oKu-Lb-fOP"/>
+                            <constraint firstItem="jgF-VH-dAb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p6E-Yi-G06"/>
+                            <constraint firstItem="NmV-YZ-Lbh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="plG-oE-jkD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="testView" destination="NmV-YZ-Lbh" id="s6Z-f6-TL0"/>
+                        <outlet property="testViewHeight" destination="kWe-tJ-sYa" id="hb2-05-OEI"/>
+                        <outlet property="testViewWidth" destination="Eyp-rn-3E0" id="fjk-ZX-rE8"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>

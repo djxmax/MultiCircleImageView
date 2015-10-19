@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwoViews" customModule="MultiCircleImageView" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView0" destination="O9n-oN-8sL" id="zJD-Aa-ocf"/>
+                <outlet property="imageView0Height" destination="BFH-RO-Uld" id="1Ro-a9-sf3"/>
+                <outlet property="imageView0Width" destination="S4H-tY-BWh" id="Ban-Jg-1mh"/>
+                <outlet property="imageView1" destination="CCw-98-MJS" id="n8G-5e-L6b"/>
+                <outlet property="imageView1Height" destination="kXe-gr-dhZ" id="vjt-Xs-ODT"/>
+                <outlet property="imageView1Width" destination="ddw-cG-AXr" id="XGz-s1-UE6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O9n-oN-8sL">
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="BFH-RO-Uld"/>
+                        <constraint firstAttribute="width" constant="125" id="S4H-tY-BWh"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CCw-98-MJS">
+                    <rect key="frame" x="75" y="75" width="125" height="125"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="125" id="ddw-cG-AXr"/>
+                        <constraint firstAttribute="height" constant="125" id="kXe-gr-dhZ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CCw-98-MJS" secondAttribute="trailing" id="5eK-YH-Cvz"/>
+                <constraint firstAttribute="bottom" secondItem="CCw-98-MJS" secondAttribute="bottom" id="H7n-k9-wqz"/>
+                <constraint firstItem="O9n-oN-8sL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iIf-tH-Beh"/>
+                <constraint firstItem="O9n-oN-8sL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ujc-IY-WoF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="240" y="361"/>
+        </view>
+    </objects>
+</document>

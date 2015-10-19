@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FiveViews" customModule="MultiCircleImageView" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView0" destination="i5J-iy-Ilz" id="HeX-jo-0D8"/>
+                <outlet property="imageView0Height" destination="1CN-TT-NeF" id="c10-XQ-Y7c"/>
+                <outlet property="imageView0Left" destination="LWG-vy-yOu" id="Nca-rn-Q6S"/>
+                <outlet property="imageView0Width" destination="5qj-JB-X01" id="FBd-Fo-oKj"/>
+                <outlet property="imageView1" destination="rsS-42-Nc3" id="w0P-Bg-5NJ"/>
+                <outlet property="imageView1Height" destination="ysB-PM-H7w" id="XAN-x2-1ta"/>
+                <outlet property="imageView1Right" destination="vno-PB-Oaj" id="xwd-Jr-sid"/>
+                <outlet property="imageView1Width" destination="j8z-2h-862" id="njh-Y8-ZmS"/>
+                <outlet property="imageView2" destination="myi-8P-f5C" id="MIQ-Pa-H4Q"/>
+                <outlet property="imageView2Center" destination="DRL-Re-wfK" id="BvZ-sv-JbY"/>
+                <outlet property="imageView2Height" destination="2EC-x0-mrh" id="UDY-48-1v4"/>
+                <outlet property="imageView2Width" destination="DJq-eu-TgT" id="F3r-7o-ZGJ"/>
+                <outlet property="imageView3" destination="1WZ-cY-3Qp" id="5y5-Bs-UC7"/>
+                <outlet property="imageView3Height" destination="CF4-e6-epw" id="cXi-1Q-dvE"/>
+                <outlet property="imageView3Width" destination="anW-7C-z0B" id="SD8-nG-Zhq"/>
+                <outlet property="imageView4" destination="U1z-2D-kmJ" id="afF-Dx-ZmR"/>
+                <outlet property="imageView4Center" destination="Bxk-OV-AGs" id="vIZ-Ac-jQE"/>
+                <outlet property="imageView4Height" destination="P2Z-sL-fxO" id="5el-Zp-KW8"/>
+                <outlet property="imageView4Width" destination="O8Z-fx-Y1Q" id="2V0-ox-yo4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i5J-iy-Ilz">
+                    <rect key="frame" x="20" y="0.0" width="90" height="90"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="1CN-TT-NeF"/>
+                        <constraint firstAttribute="width" constant="90" id="5qj-JB-X01"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rsS-42-Nc3">
+                    <rect key="frame" x="90" y="0.0" width="90" height="90"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="j8z-2h-862"/>
+                        <constraint firstAttribute="height" constant="90" id="ysB-PM-H7w"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="myi-8P-f5C">
+                    <rect key="frame" x="110" y="60" width="90" height="90"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="2EC-x0-mrh"/>
+                        <constraint firstAttribute="width" constant="90" id="DJq-eu-TgT"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1WZ-cY-3Qp">
+                    <rect key="frame" x="55" y="110" width="90" height="90"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="CF4-e6-epw"/>
+                        <constraint firstAttribute="width" constant="90" id="anW-7C-z0B"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U1z-2D-kmJ">
+                    <rect key="frame" x="0.0" y="60" width="90" height="90"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="O8Z-fx-Y1Q"/>
+                        <constraint firstAttribute="height" constant="90" id="P2Z-sL-fxO"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1WZ-cY-3Qp" secondAttribute="bottom" id="4DN-dN-X4V"/>
+                <constraint firstItem="i5J-iy-Ilz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4I0-oX-3ey"/>
+                <constraint firstItem="U1z-2D-kmJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5qH-Yc-kbH"/>
+                <constraint firstItem="U1z-2D-kmJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="5" id="Bxk-OV-AGs"/>
+                <constraint firstItem="myi-8P-f5C" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="5" id="DRL-Re-wfK"/>
+                <constraint firstItem="i5J-iy-Ilz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="LWG-vy-yOu"/>
+                <constraint firstItem="rsS-42-Nc3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SvE-9j-SxH"/>
+                <constraint firstItem="1WZ-cY-3Qp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="T7w-bt-yeh"/>
+                <constraint firstAttribute="trailing" secondItem="rsS-42-Nc3" secondAttribute="trailing" constant="20" id="vno-PB-Oaj"/>
+                <constraint firstAttribute="trailing" secondItem="myi-8P-f5C" secondAttribute="trailing" id="wlv-US-LJP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
