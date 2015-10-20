@@ -30,18 +30,14 @@ class TwoViews: UIView {
         self.backgroundColor = UIColor.clearColor()
         self.image0=image0
         self.image1=image1
-        
-        setup()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.backgroundColor = UIColor.clearColor()
-        
-        setup()
     }
     
-    func setup(){
+    func setup() -> [UIImageView]{
         view = loadViewFromNib()
         view.frame = bounds
         view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
@@ -50,6 +46,9 @@ class TwoViews: UIView {
         imageView1.image=image1
         
         addSubview(view)
+        
+        let imageViewList = [imageView0!, imageView1!]
+        return imageViewList
     }
     
     func loadViewFromNib() -> UIView {

@@ -4,6 +4,7 @@ use_frameworks!
 
 target 'MultiCircleImageView_Example', :exclusive => true do
   pod "MultiCircleImageView", :path => "../"
+  pod 'SDWebImage'
 end
 
 target 'MultiCircleImageView_Tests', :exclusive => true do

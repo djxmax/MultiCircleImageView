@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E85A9BA5A312EF8ADA8443A7"
+               BlueprintIdentifier = "3424CBC1BAA1678D035E3EC2"
                BuildableName = "MultiCircleImageView.framework"
                BlueprintName = "MultiCircleImageView"
                ReferencedContainer = "container:Pods.xcodeproj">

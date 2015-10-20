@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="f8Q-IH-gSg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MultiCircleImageView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MultiCircleImageView_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,7 +26,7 @@
                                 </constraints>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9ff-bL-JYO">
-                                <rect key="frame" x="28" y="93" width="544" height="29"/>
+                                <rect key="frame" x="28" y="80" width="544" height="29"/>
                                 <animations/>
                                 <segments>
                                     <segment title="1 image"/>
@@ -39,13 +39,6 @@
                                     <action selector="segmentedTap:" destination="BYZ-38-t0r" eventType="valueChanged" id="2qd-BQ-zJI"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MultiCircleImageView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgy-qg-yWE">
-                                <rect key="frame" x="171" y="40" width="258" height="33"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="300" minValue="50" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="jgF-VH-dAb">
                                 <rect key="frame" x="148" y="550" width="304" height="31"/>
                                 <animations/>
@@ -59,17 +52,22 @@
                         </subviews>
                         <animations/>
                         <constraints>
-                            <constraint firstItem="9ff-bL-JYO" firstAttribute="top" secondItem="Xgy-qg-yWE" secondAttribute="bottom" constant="20" id="2rm-RA-lfv"/>
-                            <constraint firstItem="Xgy-qg-yWE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F17-r2-BiJ"/>
+                            <constraint firstItem="9ff-bL-JYO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="Ljm-NF-vEH"/>
                             <constraint firstItem="NmV-YZ-Lbh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NNf-ol-Wka"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9ff-bL-JYO" secondAttribute="trailing" constant="8" id="fOg-0C-2fL"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jgF-VH-dAb" secondAttribute="bottom" constant="20" id="kIX-cc-VPG"/>
-                            <constraint firstItem="Xgy-qg-yWE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="nbK-lk-ezd"/>
                             <constraint firstItem="9ff-bL-JYO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="oKu-Lb-fOP"/>
                             <constraint firstItem="jgF-VH-dAb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p6E-Yi-G06"/>
                             <constraint firstItem="NmV-YZ-Lbh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="plG-oE-jkD"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="MultiCircleImageView" id="Ie9-rI-hcK">
+                        <barButtonItem key="rightBarButtonItem" title="TableView" id="qjf-Yd-HZw">
+                            <connections>
+                                <segue destination="Szl-Sc-kEI" kind="show" id="FMv-1C-nig"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="testView" destination="NmV-YZ-Lbh" id="s6Z-f6-TL0"/>
                         <outlet property="testViewHeight" destination="kWe-tJ-sYa" id="hb2-05-OEI"/>
@@ -78,6 +76,72 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1638" y="547"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="TBr-sx-9lC">
+            <objects>
+                <tableViewController id="Szl-Sc-kEI" customClass="TableViewController" customModule="MultiCircleImageView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="owP-iD-5Ec">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" rowHeight="200" id="Xi1-K5-naD">
+                                <rect key="frame" x="0.0" y="92" width="600" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xi1-K5-naD" id="CSB-zw-CgU">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0TN-cL-nBU">
+                                            <rect key="frame" x="205" y="5" width="190" height="190"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="190" id="0qc-Zf-KeU"/>
+                                                <constraint firstAttribute="width" constant="190" id="Z8X-JS-6RD"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="0TN-cL-nBU" firstAttribute="centerX" secondItem="CSB-zw-CgU" secondAttribute="centerX" id="bJF-Za-YHT"/>
+                                        <constraint firstItem="0TN-cL-nBU" firstAttribute="centerY" secondItem="CSB-zw-CgU" secondAttribute="centerY" id="iDg-ro-ZRL"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="Szl-Sc-kEI" id="gNs-ky-COd"/>
+                            <outlet property="delegate" destination="Szl-Sc-kEI" id="Haa-lH-2Bm"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0G-vd-drk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1638" y="1275"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pkn-Ti-vdV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f8Q-IH-gSg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qxg-KP-hbr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mNO-bt-1Ms"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="izC-BK-Oue" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="547"/>
         </scene>
     </scenes>
 </document>

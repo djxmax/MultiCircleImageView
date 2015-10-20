@@ -49,18 +49,14 @@ class FiveViews: UIView {
         self.image2=image2
         self.image3=image3
         self.image4=image4
-        
-        setup()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.backgroundColor = UIColor.clearColor()
-        
-        setup()
     }
     
-    func setup(){
+    func setup() -> [UIImageView] {
         view = loadViewFromNib()
         view.frame = bounds
         view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
@@ -72,6 +68,9 @@ class FiveViews: UIView {
         imageView4.image=image4
         
         addSubview(view)
+        
+        let imageViewList = [imageView0!, imageView1!, imageView2!, imageView3!, imageView4!]
+        return imageViewList
     }
     
     func loadViewFromNib() -> UIView {

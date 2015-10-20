@@ -34,18 +34,14 @@ class ThreeViews: UIView {
         self.image0=image0
         self.image1=image1
         self.image2=image2
-        
-        setup()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.backgroundColor = UIColor.clearColor()
-        
-        setup()
     }
     
-    func setup(){
+    func setup() -> [UIImageView]{
         view = loadViewFromNib()
         view.frame = bounds
         view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
@@ -55,6 +51,9 @@ class ThreeViews: UIView {
         imageView2.image=image2
         
         addSubview(view)
+        
+        let imageViewList = [imageView0!, imageView1!, imageView2!]
+        return imageViewList
     }
     
     func loadViewFromNib() -> UIView {

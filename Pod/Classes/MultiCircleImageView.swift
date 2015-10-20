@@ -15,20 +15,31 @@ public class MultiCircleImageView{
         self.frame = frame
     }
     
-    public func addView(rootView: UIView, imageList: [UIImage]) {
+    public func addView(rootView: UIView, imageList: [UIImage]) -> [UIImageView] {
         frame.origin = CGPoint(x: 0, y: 0)
         rootView.subviews.forEach({ $0.removeFromSuperview() })
         if(imageList.count==1){
-            rootView.addSubview(OneView(frame: frame, image0: imageList[0]))
+            let view = OneView(frame: frame, image0: imageList[0])
+            rootView.addSubview(view)
+            return view.setup()
         } else if(imageList.count == 2){
-            rootView.addSubview(TwoViews(frame: frame, image0: imageList[0], image1: imageList[1]))
+            let view = TwoViews(frame: frame, image0: imageList[0], image1: imageList[1])
+            rootView.addSubview(view)
+            return view.setup()
         } else if(imageList.count == 3){
-            rootView.addSubview(ThreeViews(frame: frame, image0: imageList[0], image1: imageList[1], image2: imageList[2]))
+            let view = ThreeViews(frame: frame, image0: imageList[0], image1: imageList[1], image2: imageList[2])
+            rootView.addSubview(view)
+            return view.setup()
         } else if(imageList.count == 4){
-            rootView.addSubview(FourViews(frame: frame, image0: imageList[0], image1: imageList[1], image2: imageList[2], image3: imageList[3]))
+            let view = FourViews(frame: frame, image0: imageList[0], image1: imageList[1], image2: imageList[2], image3: imageList[3])
+            rootView.addSubview(view)
+            return view.setup()
         } else if(imageList.count == 5){
-            rootView.addSubview(FiveViews(frame: frame, image0: imageList[0], image1: imageList[1], image2: imageList[2], image3: imageList[3], image4: imageList[4]))
+            let view = FiveViews(frame: frame, image0: imageList[0], image1: imageList[1], image2: imageList[2], image3: imageList[3], image4: imageList[4])
+            rootView.addSubview(view)
+            return view.setup()
         }
+        return []
     }
 
 }
