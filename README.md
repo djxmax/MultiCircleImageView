@@ -1,6 +1,6 @@
 # MultiCircleImageView
 
-[![CI Status](http://img.shields.io/travis/Maxime Lucquin/MultiCircleImageView.svg?style=flat)](https://travis-ci.org/Maxime Lucquin/MultiCircleImageView)
+[![CI Status](https://travis-ci.org/djxmax/MultiCircleImageView.svg?style=flat)](https://travis-ci.org/Maxime Lucquin/MultiCircleImageView)
 [![Version](https://img.shields.io/cocoapods/v/MultiCircleImageView.svg?style=flat)](http://cocoapods.org/pods/MultiCircleImageView)
 [![License](https://img.shields.io/cocoapods/l/MultiCircleImageView.svg?style=flat)](http://cocoapods.org/pods/MultiCircleImageView)
 [![Platform](https://img.shields.io/cocoapods/p/MultiCircleImageView.svg?style=flat)](http://cocoapods.org/pods/MultiCircleImageView)
@@ -19,6 +19,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 * iOS9
+* ARC
 
 ## Installation
 
@@ -42,6 +43,13 @@ let test = MultiCircleImageView(frame: testView.frame)
 test.addView(testView, imageList: imageList)
 
 ```
+
+You can retreive imageView like this :
+
+```Swift
+let imageViewList = test.addView(testView, imageList: imageList)
+```
+imgeViewList is an array of UIImageView
 
 ## Author
 
