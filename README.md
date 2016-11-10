@@ -30,7 +30,7 @@ it, simply add the following line to your Podfile:
 pod "MultiCircleImageView"
 ```
 Swift 2.2 -> v0.1.2
-Swift 2.3 -> v0.1.3
+Swift 2.3 -> v0.1.4
 
 ## Usage
 
