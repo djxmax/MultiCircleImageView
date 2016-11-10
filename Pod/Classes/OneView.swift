@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable class OneView: UIView {
     
-    var view = UIView!()
+    var view = UIView!(nil)
     var nibName: String = "OneImage"
     
     @IBOutlet weak var imageView0: UIImageView!

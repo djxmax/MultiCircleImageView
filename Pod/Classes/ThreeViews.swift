@@ -10,7 +10,7 @@ import UIKit
 
 class ThreeViews: UIView {
 
-    var view = UIView!()
+    var view = UIView!(nil)
     var nibName: String = "ThreeImages"
     
     @IBOutlet weak var imageView0: UIImageView!

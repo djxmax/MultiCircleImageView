@@ -31,9 +31,9 @@ MultiCicrlceImageView allow you to put until 5 images in a small area. It princi
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'MultiCircleImageView' => ['Pod/Assets/*.png']
-  }
+#s.resource_bundles = {
+#    'MultiCircleImageView' => ['Pod/Assets/*.png']
+#  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
