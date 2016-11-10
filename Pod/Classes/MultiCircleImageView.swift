@@ -7,15 +7,15 @@
 //
 import UIKit
 
-public class MultiCircleImageView{
+open class MultiCircleImageView{
     
-    var frame = CGRect!(nil)
+    var frame: CGRect!
     
     public init(frame: CGRect) {
         self.frame = frame
     }
     
-    public func addView(rootView: UIView, imageList: [UIImage]) -> [UIImageView] {
+    open func addView(_ rootView: UIView, imageList: [UIImage]) -> [UIImageView] {
         frame.origin = CGPoint(x: 0, y: 0)
         rootView.subviews.forEach({ $0.removeFromSuperview() })
         if(imageList.count==1){

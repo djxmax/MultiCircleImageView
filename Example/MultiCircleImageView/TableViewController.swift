@@ -29,19 +29,19 @@ class TableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 5
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ImageCell", forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ImageCell", for: indexPath)
 
         let view = cell.subviews[0].subviews[0]
         
@@ -51,7 +51,8 @@ class TableViewController: UITableViewController {
         let imageViewList = circleView.addView(view, imageList: imageList)
         
         for imageView in imageViewList {
-            SDWebImageManager.sharedManager().downloadImageWithURL(NSURL(string: "https://raw.githubusercontent.com/djxmax/MultiCircleImageView/master/stormtrooper.jpg"), options: SDWebImageOptions(), progress: nil, completed: {(imageResult : UIImage!, error : NSError!, cachType : SDImageCacheType, finished : Bool, url : NSURL!) in
+            
+            SDWebImageManager.shared().downloadImage(with: URL(string: "https://raw.githubusercontent.com/djxmax/MultiCircleImageView/master/stormtrooper.jpg"), options: SDWebImageOptions(), progress: nil, completed: { (imageResult, error, cachType, finished, url) in
                 if (imageResult != nil) {
                     imageView.image = imageResult
                 }

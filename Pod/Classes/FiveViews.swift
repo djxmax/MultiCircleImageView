@@ -10,7 +10,7 @@ import UIKit
 
 class FiveViews: UIView {
 
-    var view = UIView!(nil)
+    var view: UIView!
     var nibName: String = "FiveImages"
     
     @IBOutlet weak var imageView0: UIImageView!
@@ -43,7 +43,7 @@ class FiveViews: UIView {
     
     init(frame: CGRect, image0: UIImage, image1: UIImage, image2: UIImage, image3: UIImage, image4: UIImage) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.clearColor()
+        self.backgroundColor = UIColor.clear
         self.image0=image0
         self.image1=image1
         self.image2=image2
@@ -53,13 +53,13 @@ class FiveViews: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.backgroundColor = UIColor.clearColor()
+        self.backgroundColor = UIColor.clear
     }
     
     func setup() -> [UIImageView] {
         view = loadViewFromNib()
         view.frame = bounds
-        view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+        view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
         
         imageView0.image=image0
         imageView1.image=image1
@@ -74,15 +74,15 @@ class FiveViews: UIView {
     }
     
     func loadViewFromNib() -> UIView {
-        let bundle = NSBundle(forClass: self.dynamicType)
+        let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: nibName, bundle: bundle)
-        let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         
         return view
     }
     
-    override func drawRect(rect: CGRect) {
-        super.drawRect(rect)
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
         let result = (90*self.frame.width)/200
         let result1 = (20*self.frame.width)/200
         let result2 = (5*self.frame.width)/200

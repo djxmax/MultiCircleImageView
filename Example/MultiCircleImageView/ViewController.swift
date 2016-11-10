@@ -22,17 +22,17 @@ class ViewController: UIViewController {
         
         let layer : CAGradientLayer = CAGradientLayer()
         layer.frame.size = self.view.frame.size
-        layer.frame.origin = CGPointMake(0.0,0.0)
-        let color0 = UIColor(red:82/255, green:237/255, blue:199/255, alpha:1).CGColor
-        let color1 = UIColor(red:90/255, green:200.0/255, blue: 251/255, alpha:1).CGColor
+        layer.frame.origin = CGPoint(x: 0.0,y: 0.0)
+        let color0 = UIColor(red:82/255, green:237/255, blue:199/255, alpha:1).cgColor
+        let color1 = UIColor(red:90/255, green:200.0/255, blue: 251/255, alpha:1).cgColor
         layer.colors = [color0,color1]
-        self.view.layer.insertSublayer(layer, atIndex: 0)
+        self.view.layer.insertSublayer(layer, at: 0)
         
         
         let imageList = [UIImage(named: "cell_triangle")!]
         
         let test = MultiCircleImageView(frame: testView.frame)
-        test.addView(testView, imageList: imageList)
+        _ = test.addView(testView, imageList: imageList)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -41,11 +41,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func segmentedTap(sender: AnyObject) {
+    @IBAction func segmentedTap(_ sender: AnyObject) {
         self.changeImagesNumber(sender.selectedSegmentIndex)
     }
     
-    func changeImagesNumber(number: Int){
+    func changeImagesNumber(_ number: Int){
         lastNumber = number
         var imageList: [UIImage]!
         switch number
@@ -73,10 +73,10 @@ class ViewController: UIViewController {
         }
         
         let test = MultiCircleImageView(frame: testView.frame)
-        test.addView(testView, imageList: imageList)
+        _ = test.addView(testView, imageList: imageList)
     }
 
-    @IBAction func sliderChanged(sender: UISlider) {
+    @IBAction func sliderChanged(_ sender: UISlider) {
         testViewHeight.constant = CGFloat(sender.value)
         testViewWidth.constant = CGFloat(sender.value)
         testView.frame.size.width = CGFloat(sender.value)

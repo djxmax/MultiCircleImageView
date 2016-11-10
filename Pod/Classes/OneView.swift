@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable class OneView: UIView {
     
-    var view = UIView!(nil)
+    var view: UIView!
     var nibName: String = "OneImage"
     
     @IBOutlet weak var imageView0: UIImageView!
@@ -20,19 +20,19 @@ import UIKit
     
     init(frame: CGRect, image0: UIImage) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.clearColor()
+        self.backgroundColor = UIColor.clear
         self.image0 = image0
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.backgroundColor = UIColor.clearColor()
+        self.backgroundColor = UIColor.clear
     }
     
     func setup() -> [UIImageView] {
         view = loadViewFromNib()
         view.frame = bounds
-        view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+        view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
         
         imageView0.image = image0
         
@@ -43,15 +43,15 @@ import UIKit
     }
     
     func loadViewFromNib() -> UIView {
-        let bundle = NSBundle(forClass: self.dynamicType)
+        let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: nibName, bundle: bundle)
-        let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         
         return view
     }
     
-    override func drawRect(rect: CGRect) {
-        super.drawRect(rect)
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
         imageView0.layer.cornerRadius = imageView0.frame.width/2
     }
 }
