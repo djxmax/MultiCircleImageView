@@ -29,6 +29,8 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "MultiCircleImageView"
 ```
+Swift 2.2 -> v1.2
+Swift 2.3 -> v1.3
 
 ## Usage
 
