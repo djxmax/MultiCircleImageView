@@ -9,7 +9,7 @@ import UIKit
 
 public class MultiCircleImageView{
     
-    var frame = CGRect!()
+    var frame = CGRect!(nil)
     
     public init(frame: CGRect) {
         self.frame = frame
