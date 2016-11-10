@@ -9,7 +9,7 @@
 
 MultiCicrlceImageView allow you to put until 5 images in a small area. It principally made for messaging list with one or more users.
 
-![](MultiCircleImageViewScreen.gif?raw=true "MultiCircleImageView screenshot")
+![](https://raw.githubusercontent.com/djxmax/MultiCircleImageView/master/MultiCircleImageViewScreen.gif?raw=true "MultiCircleImageView screenshot")
 
 
 ## Usage
@@ -31,6 +31,7 @@ pod "MultiCircleImageView"
 ```
 Swift 2.2 -> v0.1.2
 Swift 2.3 -> v0.1.5
+Swift 3   -> v0.1.6
 
 ## Usage
 
